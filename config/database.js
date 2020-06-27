@@ -4,7 +4,7 @@ module.exports = () => ({
     default: {
       connector: 'mongoose',
       settings: {
-          "uri": "mongodb+srv://eduard:3dLIaPIdB3n3d1c@cluster0-snmef.mongodb.net/wild?retryWrites=true&w=majority"
+          "uri": `${process.env.DATABASE_URI}`
       },
       options: {
         ssl: true
