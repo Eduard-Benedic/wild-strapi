@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_reusable_slider_components",
+  "info": {
+    "name": "sliderComponent",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "sliderImageCaption": {
+      "type": "string",
+      "required": true
+    },
+    "sliderImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

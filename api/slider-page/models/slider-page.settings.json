@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "slider_pages",
+  "info": {
+    "name": "sliderPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "sliderSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable.slider-component",
+      "required": true
+    }
+  }
+}
