@@ -1,10 +1,10 @@
-module.exports = () => ({
+module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
     default: {
       connector: 'mongoose',
       settings: {
-          "uri": `${process.env.MongoDB_URI}`
+          "uri": env('MongoDB_URI')
       },
       options: {
         ssl: true
